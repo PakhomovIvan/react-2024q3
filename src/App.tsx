@@ -1,15 +1,12 @@
-import React, { useState } from 'react'
-
-import './App.css'
-import Footer from './components/Footer/Footer'
+import './App.css';
+import Footer from './components/Footer/Footer';
 
 function App() {
-
   return (
     <>
-      <Footвыаr />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

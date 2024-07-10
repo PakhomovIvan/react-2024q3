@@ -1,11 +1,9 @@
-import React from 'react';
-
-import { Link } from 'react-router-dom';
-import { VscGithub } from 'react-icons/vsc';
+import { IconType } from 'react-icons';
 import { TbBrandDiscord } from 'react-icons/tb';
+import { VscGithub } from 'react-icons/vsc';
+import { Link } from 'react-router-dom';
 
 import * as style from './Footer.module.css';
-import { IconType } from 'react-icons';
 
 type Data = { Icon: IconType; link: string };
 

@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "test": "jest",
     "format:fix": "prettier --write \"./**/*.{ts,tsx,css}\"",
-    "prepare": "husky"
+    "prepare": "cd .. && husky react-2024q3/.husky"
   },
   "dependencies": {
     "eslint-config-prettier": "^9.1.0",

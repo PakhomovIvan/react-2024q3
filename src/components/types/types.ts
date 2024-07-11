@@ -2,11 +2,11 @@ export interface I_Poke {
   name: string;
   url: string;
   skills: I_Skills[];
-  type: I_Type[];
+  types: I_Type[];
 }
 
 interface I_Skills {
-  skills: {
+  skill: {
     name: string;
   };
 }
@@ -15,4 +15,11 @@ interface I_Type {
   type: {
     name: string;
   };
+}
+
+export interface I_States {
+  elemList: I_Poke[];
+  input: string;
+  isLoad: boolean;
+  isBreak: boolean;
 }

@@ -1,12 +1,24 @@
-import './App.css';
-import Footer from '../Footer/Footer';
+import { Component } from 'react';
 
-function App() {
-  return (
-    <>
-      <Footer />
-    </>
-  );
+import './App.css';
+import { I_States } from '../types/types';
+
+export default class App extends Component<object, I_States> {
+  states = {
+    elemList: [],
+    input: '',
+    isLoad: true,
+    isBreak: false,
+  };
+
+  componentMnt(): void {
+    this.getLSData
+      ? (this.searchElem(this.getLSData),
+        this.setState({
+          input: this.getLSData?.toString() || '',
+        }))
+      : this.getElems();
+  }
 }
 
-export default App;
+searchElem = async (input: string) => {};

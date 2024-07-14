@@ -11,7 +11,7 @@ export default class App extends Component<object, I_States> {
     isBreak: false,
   };
 
-  componentMnt(): void {
+  componentDidMount(): void {
     this.getLSData
       ? (this.searchElem(this.getLSData),
         this.setState({
